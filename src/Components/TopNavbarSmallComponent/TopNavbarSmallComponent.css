@@ -1,0 +1,12 @@
+.TopNavbar p {
+  font-size: 0.8rem;
+}
+
+.TopNavbar p a {
+  color: var(--lightSmook);
+}
+
+.TopNavbar h3 {
+  font-size: 1rem;
+  color: var(---mainColor);
+}

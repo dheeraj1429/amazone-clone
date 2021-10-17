@@ -1,0 +1,49 @@
+.NavbarDivSecond .SearchDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: auto;
+}
+
+.NavbarDivSecond {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.NavbarDivSecond .SearchDiv input {
+  width: 900px;
+  height: 50px;
+  outline: none;
+  padding: 1rem;
+}
+
+.DropDownMenuDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 50px;
+  background-color: var(--dropDownColor);
+  color: var(--smoothWhite);
+}
+
+.DropDownMenuDiv p {
+  margin-right: 0.5rem;
+}
+
+.DropDownMenuDiv i {
+  cursor: pointer;
+}
+
+.NavbarDivSecond .SearchDiv .searchIcon {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: var(--searchButtonBg);
+  color: var(--darkColor);
+  border: none;
+  cursor: pointer;
+}

@@ -5,3 +5,10 @@ export const setData = () => {
     type: ACTION_TYPE.SET_DATA,
   };
 };
+
+export const SendData = (data) => {
+  return {
+    type: ACTION_TYPE.SEND_DATA,
+    payload: data,
+  };
+};

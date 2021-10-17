@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import TopNavbarSmallComponent from "../TopNavbarSmallComponent/TopNavbarSmallComponent";
 import SearchComponent from "../SearchComponent/SearchComponent";
@@ -9,7 +10,9 @@ function TopNavbarComponent() {
   return (
     <div className="TopNavbar">
       <div className="NavbarDivFirst">
-        <img src="./Images/on.PNG" />
+        <Link to="/">
+          <img src="./Images/on.PNG" />
+        </Link>
         <TopNavbarSmallComponent title={"Hello"} subtitle={"Select your address"} />
       </div>
       <div className="NavbarDivSecond">
@@ -19,7 +22,9 @@ function TopNavbarComponent() {
         <TopNavbarSmallComponent title={"Hello, Sign in"} subtitle={"Account & Lists"} />
         <TopNavbarSmallComponent title={"Return"} subtitle={"& Orders"} />
         <div>
-          <i class="fas fa-shopping-cart fa-2x"></i>
+          <Link to="/Shop">
+            <i class="fas fa-shopping-cart fa-2x"></i>
+          </Link>
         </div>
       </div>
     </div>

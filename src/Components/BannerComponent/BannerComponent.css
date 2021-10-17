@@ -1,0 +1,10 @@
+.BannerSection {
+  width: 100%;
+  height: auto;
+}
+
+.Container {
+  max-width: 1500px;
+  margin: auto;
+  border: 1px solid red;
+}

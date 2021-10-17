@@ -1,0 +1,20 @@
+.SecondNavbar {
+  width: 100%;
+  height: auto;
+  background-color: var(--smallNavbarColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.SecondNavbar p {
+  color: var(---mainColor);
+  font-weight: 600;
+  margin: 0 0.4rem;
+  font-size: 0.8rem;
+}
+
+.SecondNavbar a {
+  color: var(---mainColor);
+}

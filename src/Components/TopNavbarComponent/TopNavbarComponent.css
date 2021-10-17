@@ -29,3 +29,7 @@
 .NavbarDivThree p {
   color: var(--lightSmook);
 }
+
+.NavbarDivThree a {
+  color: var(---mainColor);
+}

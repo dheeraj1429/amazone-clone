@@ -18,20 +18,25 @@ const initalState = {
     { name: "Coupons" },
     { name: "Sell" },
   ],
+  searchData: "",
+  listData: [],
 };
 
 const userReducer = (state = initalState, action) => {
   switch (action.type) {
-    case ACTION_TYPE.SET_DATA:
-      return {
-        ...state,
-        NavbarData: action.payload,
-      };
-
     case ACTION_TYPE.SEND_DATA:
       return {
         ...state,
         searchData: action.payload,
+      };
+
+    case ACTION_TYPE.SET_DATA:
+      return {
+        ...state,
+        listData: {
+          ...state.listData,
+          data: action.payload,
+        },
       };
 
     default:

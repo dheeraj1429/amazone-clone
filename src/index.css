@@ -9,6 +9,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  background-color: var(--bodyColor);
 }
 
 code {
@@ -30,6 +31,7 @@ code {
   --dropDownColor: #f3f3f3;
   --smoothWhite: #666;
   --lightSmook: rgb(202, 202, 202);
+  --bodyColor: #eaeded;
 }
 
 a {

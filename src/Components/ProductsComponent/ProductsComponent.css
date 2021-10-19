@@ -1,0 +1,45 @@
+.ProductsCardDiv {
+  width: 350px;
+  background-color: var(---mainColor);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  height: auto;
+}
+
+.ProductsCardDiv h1 {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ProducDiv {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.ProducDiv img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ProductsCardDiv p {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.PriceDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PriceDiv > p:nth-child(2):hover {
+  color: var(--linkColor);
+  text-decoration: underline;
+}

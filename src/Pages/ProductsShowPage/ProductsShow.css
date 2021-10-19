@@ -1,0 +1,39 @@
+.ProductsShowDiv {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+
+.ProductsContainerDiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.ImgDivContent img {
+  width: auto;
+  height: 600px;
+}
+
+.productsContent {
+  padding: 0 2rem;
+}
+
+.productsContent h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.RatinDiv {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.RatinDiv p {
+  color: var(--linkColor);
+  margin-right: 1rem;
+}
+
+.RatinDiv p:hover {
+  text-decoration: underline;
+}

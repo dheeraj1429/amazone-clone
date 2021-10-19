@@ -1,1 +1,7 @@
 https://www.universal-tutorial.com/rest-apis/free-rest-api-for-country-state-city
+
+api -> https://api.rainforestapi.com/request?api_key=8BACAFE1A01044208ED6E7737D70DBB0&type=product&amazon_domain=amazon.com&asin=B073JYC4XM
+
+website -> https://app.rainforestapi.com/playground
+
+https://commercejs.com/docs/api/?javascript#list-all-products

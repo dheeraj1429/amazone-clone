@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router";
 
 import Category from "./Pages/CategoryPage/Category";
 import HomePage from "./Pages/HomePage/HomePage";
+import ProductsShow from "./Pages/ProductsShowPage/ProductsShow";
 
 import "./App.css";
 
@@ -16,6 +17,7 @@ function App() {
       <Switch>
         <Route exact path="/Category:Name" component={Category} />
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/Products:Name" component={ProductsShow} />
       </Switch>
     </div>
   );

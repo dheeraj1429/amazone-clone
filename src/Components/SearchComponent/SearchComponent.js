@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { SendData } from "../../Redux/Action/action";
 import "./SearchComponent.css";
 
@@ -18,7 +19,14 @@ function SearchComponent() {
         <i class="fas fa-sort-down"></i>
       </div>
       <input type="search" placeholder="Search" value={SearchItem} onChange={StoreValueEvent} />
-      <div className="searchIcon" onClick={() => dispatch(SendData(SearchItem))}>
+
+      <div
+        className="searchIcon"
+        onClick={() => {
+          dispatch(SendData(SearchItem));
+          setSearchItem("");
+        }}
+      >
         <i class="fas fa-search "></i>
       </div>
     </div>

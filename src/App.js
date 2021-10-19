@@ -6,6 +6,8 @@ import Category from "./Pages/CategoryPage/Category";
 import HomePage from "./Pages/HomePage/HomePage";
 import ProductsShow from "./Pages/ProductsShowPage/ProductsShow";
 
+import { firestore } from "./Components/Firebase/Firebase.utili";
+
 import "./App.css";
 
 function App() {

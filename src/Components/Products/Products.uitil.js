@@ -5,6 +5,7 @@ export const AllProducts = [
     Discription:
       "Mi Smart Band 5 – India’s No. 1 Fitness Band, 1.1-inch AMOLED Color Display, Magnetic Charging, 2 Weeks Battery Life, Personal Activity Intelligence (PAI), Women’s Health Tracking",
     shortTitle: "Mi Smart Band 5",
+    ragulerPrice: 3000,
     Deal_of_the_Day: 1999,
     rating: " 51,888 ratings",
     anwsered: "1000+ answered questions",
@@ -34,6 +35,7 @@ export const AllProducts = [
     Discription:
       "OnePlus Band: Steven Harrington Edition: Smart Everywear : 1.1(2.8 cm) AMOLED Display, Continuous Blood Oxygen Saturation Monitoring (Sp02), 5ATM + IP68 Water & Dust Resistant",
     shortTitle: "OnePlus Band",
+    ragulerPrice: 4000,
     Deal_of_the_Day: 2999,
     rating: "12,429 ratings",
     anwsered: "624 answered questions",
@@ -58,6 +60,7 @@ export const AllProducts = [
     Discription:
       "Huawei Band 6 Fitness Tracker Smartwatch for Men Women, 1.47''AMOLED Color Screen, SpO2,24H Heart Rate Monitor,14 Days Battery Life,Female Cycle Tracker, 5ATM Waterproof, Global Version,Green",
     shortTitle: "Huawei Band 6 Fitness Tracker",
+    ragulerPrice: 5000,
     Deal_of_the_Day: 3990,
     rating: "12,429 ratings",
     anwsered: "195 answered questions",
@@ -81,6 +84,7 @@ export const AllProducts = [
     Discription:
       "Huawei Band 6 Fitness Tracker Smartwatch for Men Women, 1.47’’ AMOLED Color Screen, All Day Spo2 and Heart Rate Monitoring,2 Week Battery Life,5ATM Waterproof, Global Version,Pink",
     shortTitle: "Huawei Band 6 Fitness Tracker Smartwatch",
+    ragulerPrice: 5500,
     Deal_of_the_Day: 3999,
     rating: "1,495 ratings",
     anwsered: "195 answered questions",
@@ -105,6 +109,7 @@ export const AllProducts = [
     Discription:
       "HUAWEI Band 6, Smart Watch Features, 1.47 inch (3.7 cm) Full View Display, All-Day SpO2 Monitoring, 14 Day Charge, Heart Rate Check, Sleep Tracking, 96 Workout Modes, Personal Assist, Red",
     shortTitle: "HUAWEI Band 6, Smart Watch Features",
+    ragulerPrice: 6050,
     Deal_of_the_Day: 4000,
     rating: "1,495 ratings",
     anwsered: "195 answered questions",
@@ -127,6 +132,7 @@ export const AllProducts = [
     posterUrl: "https://m.media-amazon.com/images/I/7162Y5fPdkL._SX569_.jpg",
     Discription: "Samsung Galaxy M12 (Black,6GB RAM, 128GB Storage) 6 Months Free Screen Replacement for Prime",
     shortTitle: "Samsung Galaxy M12",
+    ragulerPrice: 13000,
     Deal_of_the_Day: 11000,
     rating: "50,174 ratings",
     anwsered: "1000+ answered questions",
@@ -150,6 +156,7 @@ export const AllProducts = [
     posterUrl: "https://m.media-amazon.com/images/I/71sxlhYhKWL._SY741_.jpg",
     Discription: "Redmi 9A (Nature Green, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor | 5000 mAh Battery",
     shortTitle: "Redmi 9A",
+    ragulerPrice: 70000,
     Deal_of_the_Day: 60000,
     rating: "85,717 ratings",
     anwsered: "1000+ answered questions",
@@ -158,7 +165,6 @@ export const AllProducts = [
       { url: "https://m.media-amazon.com/images/I/81QSmIEUsAL._SX679_.jpg" },
       { url: "https://m.media-amazon.com/images/I/71Uy0aI6GGL._SX679_.jpg" },
       { url: "https://m.media-amazon.com/images/I/81hyOE09RFL._SX679_.jpg" },
-      { url: "https://m.media-amazon.com/images/I/61dhWwsACbL._SX679_.jpg" },
     ],
 
     About: `Country Of Origin - India
@@ -176,6 +182,7 @@ export const AllProducts = [
     posterUrl: "https://m.media-amazon.com/images/I/7162Y5fPdkL._SL1500_.jpg",
     Discription: "Samsung Galaxy M12 (Black,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate",
     shortTitle: "Samsung Galaxy M12",
+    ragulerPrice: 10000,
     Deal_of_the_Day: 9000,
     rating: "50,174 ratings",
     anwsered: "1000+ answered questions",

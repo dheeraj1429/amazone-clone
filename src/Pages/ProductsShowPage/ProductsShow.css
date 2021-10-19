@@ -10,6 +10,14 @@
   display: flex;
 }
 
+.ShortImages {
+  width: auto;
+}
+
+.ShortImages img {
+  width: 90px;
+}
+
 .ImgDivContent img {
   width: auto;
   height: 600px;
@@ -27,6 +35,7 @@
 .RatinDiv {
   display: flex;
   margin: 0.5rem 0;
+  align-items: center;
 }
 
 .RatinDiv p {
@@ -36,4 +45,61 @@
 
 .RatinDiv p:hover {
   text-decoration: underline;
+}
+
+.AmazoneChoice {
+  width: auto;
+  padding: 0.5rem;
+  background-color: var(--footerColorThree);
+  margin-right: 1rem;
+  color: var(---mainColor);
+  font-size: 0.8rem;
+}
+
+.AmazoneChoice span {
+  color: var(--loveRed);
+}
+
+.MrpDiv {
+  padding: 2rem;
+  border-top: 1px solid var(--lightSmook);
+  border-bottom: 1px solid var(--lightSmook);
+}
+
+.MrpDiv p {
+  margin: 0.3rem 0;
+  color: var(---smoothGray);
+}
+
+.MrpDiv span {
+  font-size: 1.2rem;
+}
+
+.DayOffer {
+  color: var(--loveRed);
+}
+
+.DropingDiv {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.DropingDiv > div {
+  margin-right: 0.8rem;
+}
+
+.DropingDiv img {
+  width: 40px;
+}
+
+.DropingDiv p {
+  font-size: 0.8rem;
+  max-width: 120px;
+  color: var(--linkColor);
+}
+
+.AboutDiv p {
+  font-size: 0.9rem;
 }

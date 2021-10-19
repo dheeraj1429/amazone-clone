@@ -1,0 +1,13 @@
+.CustomButtonComponent {
+  border: none;
+  background-color: var(--footerColorThree);
+  color: var(---mainColor);
+  padding: 0.8rem 2.3rem;
+  margin: 1rem 0;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.AddToCard {
+  background-color: var(--loveRed);
+}

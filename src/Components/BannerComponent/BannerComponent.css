@@ -9,7 +9,14 @@
   margin: auto;
 }
 
-.BannerDiv {
+.BannerSection .Container {
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+
+.BannerSection .Container::before {
+  content: "";
   width: 100%;
   height: 70vh;
   background-image: url(https://m.media-amazon.com/images/I/71yr9snSjYL._SX3000_.jpg);

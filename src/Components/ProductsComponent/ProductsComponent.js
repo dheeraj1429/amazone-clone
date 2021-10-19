@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./ProductsComponent.css";
 
-function ProductsComponent({ posterUrl, Discription, Deal_of_the_Day, shortTitle, rating, anwsered, offer, shortImages, About }) {
+function ProductsComponent({ posterUrl, Discription, Deal_of_the_Day, shortTitle, rating, anwsered, offer, shortImages, About, ragulerPrice }) {
   return (
     <div className="ProductsDiv">
       <div className="ProductsCardDiv">
         <h1>{Discription}</h1>
         <Link
           to={{
-            pathname: `/Products:${shortTitle}`,
+            pathname: `/Products:${shortTitle.replaceAll(" ", "_")}`,
             data: {
               posterUrl,
               Discription,
@@ -20,6 +20,7 @@ function ProductsComponent({ posterUrl, Discription, Deal_of_the_Day, shortTitle
               anwsered,
               offer,
               About,
+              ragulerPrice,
             },
           }}
         >

@@ -1,15 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { auth } from "../Firebase/Firebase.utili";
+
 import "./TopNavbarSmallComponent.css";
 
-function TopNavbarSmallComponent({ title, subtitle }) {
+function TopNavbarSmallComponent({ title, subtitle, shortName }) {
   return (
     <div>
-      <p>{title !== "Hello" ? <Link to={title.replaceAll(" ", "_")}>{title}</Link> : title}</p>
+      <p
+        onClick={() => (title == "Log Out" ? auth.signOut() : null)}
+        style={{
+          cursor: title === "Log Out" ? "pointer" : "",
+        }}
+      >
+        {title !== `Hello! ${shortName}` && title !== "Hello" && title !== "Log Out" ? (
+          <Link to={`/User:${title.replaceAll(" ", "_")}`}>{title}</Link>
+        ) : (
+          title
+        )}
+      </p>
       <Link
         to={{
-          pathname: `/${subtitle.replaceAll(" ", "_")}`,
+          pathname: `${subtitle.replaceAll(" ", "_")}`,
         }}
       >
         <h3>

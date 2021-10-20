@@ -17,7 +17,7 @@ function BannerComponent() {
 
   let filterData;
   if (selector) {
-    filterData = selector.filter((el, idx) => idx < 4);
+    filterData = selector.filter((el, idx) => idx < 9);
   }
 
   useEffect(() => {

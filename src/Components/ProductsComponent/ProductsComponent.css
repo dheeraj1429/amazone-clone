@@ -4,6 +4,9 @@
   padding: 1.5rem;
   margin: 1rem 0.5rem;
   height: auto;
+  box-shadow: 5px 5px 5px 0px rgba(174, 174, 174, 0.46);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(174, 174, 174, 0.46);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(174, 174, 174, 0.46);
 }
 
 .ProductsCardDiv h1 {

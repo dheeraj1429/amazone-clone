@@ -2,12 +2,14 @@ import React from "react";
 
 import "./CustomButtonComponent.css";
 
-function CustomButtonComponent({ data, extraClass }) {
+export const CustomButtonComponent = ({ data, extraClass, onClickData }) => {
   return (
-    <button type="button" className={extraClass ? `CustomButtonComponent ${extraClass}` : `CustomButtonComponent`}>
+    <button
+      type="button"
+      className={extraClass ? `CustomButtonComponent ${extraClass}` : `CustomButtonComponent`}
+      onClick={onClickData ? onClickData : null}
+    >
       {data}
     </button>
   );
-}
-
-export default CustomButtonComponent;
+};

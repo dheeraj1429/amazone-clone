@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CustomButtonComponent from "../../Components/CustomButtonComponent/CustomButtonComponent";
+import { CustomButtonComponent } from "../../Components/CustomButtonComponent/CustomButtonComponent";
 
 import "./ProductsShow.css";
 

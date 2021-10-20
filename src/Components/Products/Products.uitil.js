@@ -199,4 +199,41 @@ export const AllProducts = [
     16.55 centimeters (6.5-inch) HD+ TFT LCD - infinity v-cut display,90Hz screen refresh rate, HD+ resolution with 720 x 1600 pixels resolution, 269 PPI with 16M color
     Memory, Storage & SIM: 4GB RAM | 64GB internal memory expandable up to 1TB| Dual SIM (nano+nano) dual-standby (4G+4`,
   },
+  {
+    id: 9,
+    posterUrl: "https://m.media-amazon.com/images/I/51lEIy51L6L._SX522_.jpg",
+    Discription:
+      "boAt Airdopes 441 TWS Ear-Buds with IWP Technology, Immersive Audio, Up to 30H Total Playback, IPX7 Water Resistance, Super Touch Controls, Secure Sports Fit & Type-C Port(Raging Red)",
+    shortTitle: "boAt Airdopes 441",
+    ragulerPrice: 5999,
+    Deal_of_the_Day: 1999,
+    rating: "103,268 ratings",
+    anwsered: "1000+ answered questions",
+
+    shortImages: [
+      { url: "https://m.media-amazon.com/images/I/61B2hgihcFL._SX522_.jpg" },
+      { url: "https://m.media-amazon.com/images/I/61wNhh88VmL._SX522_.jpg" },
+      { url: "https://m.media-amazon.com/images/I/51IaG4B0JvL._SX522_.jpg" },
+      { url: "https://m.media-amazon.com/images/I/610sudaCDNL._SX522_.jpg" },
+    ],
+
+    About: `Battery: Airdopes 441 offers a playback time of up to 5 hours in earbuds & and earbuds get charged to 100% in 1.5 hours. Earphone battery capacity : 3.7V, 43mAH×2. Standby Time : 70 Hours
+    Bluetooth: It has Bluetooth v5.0 with a range of 10m and is compatible with Android & iOS
+    IPX rating: It has an IPX7 marked water & sweat resistance
+    ANC: NA
+    No. of Mic: 1 per Earbud
+    Other Inclusions: Additional Earmuffs, USB Type C Charging Cable, Warranty Card, User Manual
+    Sports friendly design with Touch Controls
+    Instant Voice Assistant
+    IWP Instant Pairing
+    Keep yourself plugged all day as the Airdopes 441 provide upto 5 hours of sound per charge and an additional 25H of playback bliss with the carry cum charge case.
+    It is equipped with IWP (Insta Wake N’ Pair) Technology that powers on the earbuds and puts them into connection mode as soon as one opens the lid of the carry case
+    TWS Airdopes 441 offers true wireless experience with latest Bluetooth v5.0
+    It is IPX7 rated for resistance against water and sweat to provide a carefree listening experience
+    It possesses 6mm Drivers for enthralling audio bliss with immersive sound
+    The TWS earbuds offer stereo calling feature for clear and crisp communication
+    You can access the instant voice assistant via just a single touch with the help of its advanced capacitive touch controls
+    It has been ergonomically and aesthetically designed to meet the needs of every music lover by offering extraordinary style with sports centric, secure fit ear hooks
+    With its Type-c interface, there's no hassle for up or down orientation as it works regardless of which way you plug in.`,
+  },
 ];

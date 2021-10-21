@@ -1,11 +1,17 @@
 import React, { useState } from "react";
+
+import { useDispatch } from "react-redux";
+import { setWishList } from "../../Redux/Action/action";
+
 import { CustomButtonComponent } from "../../Components/CustomButtonComponent/CustomButtonComponent";
 
 import "./ProductsShow.css";
 
 function ProductsShow(props) {
   const [ImgUrl, setImgUrl] = useState(false);
-  const { posterUrl, Discription, Deal_of_the_Day, shortTitle, rating, anwsered, offer, shortImages, About, ragulerPrice } = props.location.data;
+  const { id, posterUrl, Discription, Deal_of_the_Day, shortTitle, rating, anwsered, offer, shortImages, About, ragulerPrice } = props.location.data;
+
+  const dispatch = useDispatch();
 
   return (
     <div className="ProductsShowDiv">
@@ -72,8 +78,23 @@ function ProductsShow(props) {
               </p>
             </div>
 
-            <CustomButtonComponent data={"Add To Wishlist"} />
-            <CustomButtonComponent data={"Buy Now"} extraClass={"AddToCard"} />
+            <CustomButtonComponent
+              data={"Add To Wishlist"}
+              type={"button"}
+              onClickData={() =>
+                dispatch(
+                  setWishList({
+                    posterUrl,
+                    Deal_of_the_Day,
+                    shortTitle,
+                    offer,
+                    ragulerPrice,
+                    id,
+                  })
+                )
+              }
+            />
+            <CustomButtonComponent data={"Buy Now"} extraClass={"AddToCard"} type={"button"} />
           </div>
         </div>
       </div>

@@ -2,10 +2,10 @@ import React from "react";
 
 import "./CustomButtonComponent.css";
 
-export const CustomButtonComponent = ({ data, extraClass, onClickData }) => {
+export const CustomButtonComponent = ({ data, extraClass, onClickData, type }) => {
   return (
     <button
-      type="button"
+      type={type}
       className={extraClass ? `CustomButtonComponent ${extraClass}` : `CustomButtonComponent`}
       onClick={onClickData ? onClickData : null}
     >

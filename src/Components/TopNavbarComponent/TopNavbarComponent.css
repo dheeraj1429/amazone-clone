@@ -33,3 +33,12 @@
 .NavbarDivThree a {
   color: var(---mainColor);
 }
+
+.ShopDivComponent {
+  position: relative;
+}
+
+.ShopDivComponent i {
+  cursor: pointer;
+  margin-right: 0.5rem;
+}

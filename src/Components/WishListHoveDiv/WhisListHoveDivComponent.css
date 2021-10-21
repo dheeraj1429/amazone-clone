@@ -1,0 +1,84 @@
+.WishListCard {
+  width: 400px;
+  height: 500px;
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 999;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px rgba(174, 174, 174, 0.46);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(174, 174, 174, 0.46);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(174, 174, 174, 0.46);
+  padding: 1rem;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.hideCard {
+  display: none;
+}
+
+.WishListCard::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.WishListCard::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.WishListCard::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.WishListCard::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.wishListDivCardSm {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  margin: 0.6rem 0;
+  display: flex;
+  border: 1px solid rgb(129, 129, 129);
+}
+
+.ProductsImgDiv {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+}
+
+.producstsContentDiv {
+  margin-left: 1rem;
+  max-width: 120px;
+}
+
+.producstsContentDiv h3 {
+  color: #000;
+  font-size: 0.7rem;
+}
+
+.producstsContentDiv p {
+  font-size: 0.6rem;
+  color: rgb(46, 46, 46) !important;
+}
+
+.producstsContentDiv h4 {
+  color: rgb(53, 53, 53);
+}
+
+.removeItemButton {
+  font-size: 0.6rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--headerFontColor);
+  border: none;
+  color: var(---mainColor);
+  cursor: pointer;
+}

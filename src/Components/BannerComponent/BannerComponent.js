@@ -29,9 +29,7 @@ function BannerComponent() {
       <div className="Container">
         <div className="BannerDiv"></div>
         <div className="Spacer"></div>
-        <div className="ProductsContainer">
-          {selector ? filterData.map(({ id, ...otherProps }) => <ProductsComponent key={id} {...otherProps} />) : null}
-        </div>
+        <div className="ProductsContainer">{selector ? filterData.map(({ ...otherProps }) => <ProductsComponent {...otherProps} />) : null}</div>
       </div>
     </div>
   );

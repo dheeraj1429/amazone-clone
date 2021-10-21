@@ -28,3 +28,7 @@
 .GoogleButton {
   background-color: #4081ec;
 }
+
+.ErrorPara {
+  color: var(--red);
+}

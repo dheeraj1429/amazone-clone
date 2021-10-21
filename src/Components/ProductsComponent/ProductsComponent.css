@@ -46,3 +46,9 @@
   color: var(--linkColor);
   text-decoration: underline;
 }
+
+.wishListLink {
+  background: var(--darkColor);
+  padding: 0.3rem 1rem;
+  color: var(---mainColor);
+}

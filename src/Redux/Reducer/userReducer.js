@@ -20,6 +20,7 @@ const initalState = {
   ],
   searchData: "",
   listData: [],
+  whisList: [],
 };
 
 const userReducer = (state = initalState, action) => {
@@ -37,6 +38,31 @@ const userReducer = (state = initalState, action) => {
           ...state.listData,
           data: action.payload,
         },
+      };
+
+    case ACTION_TYPE.SET_USER:
+      return {
+        ...state,
+        currentUser: [action.payload],
+      };
+
+    case ACTION_TYPE.SET_WISHLIST:
+      return {
+        ...state,
+        whisList: [
+          ...state.whisList,
+          {
+            ...action.payload,
+          },
+        ],
+      };
+
+    case ACTION_TYPE.REMOVE_ITEM:
+      const NewItemsList = state.whisList.filter((el) => el.id !== action.payload);
+
+      return {
+        ...state,
+        whisList: NewItemsList,
       };
 
     default:

@@ -34,6 +34,7 @@ code {
   --bodyColor: #dfdfdf;
   --loveRed: rgb(223, 111, 47);
   ---smoothGray: rgb(83, 83, 83);
+  --red: rgb(160, 15, 15);
 }
 
 a {

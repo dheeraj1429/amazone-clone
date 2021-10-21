@@ -1,14 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
+import { useSelector } from "react-redux";
 
 import TopNavbarSmallComponent from "../TopNavbarSmallComponent/TopNavbarSmallComponent";
 import SearchComponent from "../SearchComponent/SearchComponent";
 
-import { auth } from "../Firebase/Firebase.utili";
+import WhisListHoveDivComponent from "../WishListHoveDiv/WhisListHoveDivComponent";
 
 import "./TopNavbarComponent.css";
 
 function TopNavbarComponent(props) {
+  const selector = useSelector((state) => state.user.whisList);
+
+  const [ShowWishList, setShowWishList] = useState(false);
+
   let shortUerName;
   if (props.userData !== null) {
     const { displayName } = props.userData;
@@ -33,10 +39,15 @@ function TopNavbarComponent(props) {
       <div className="NavbarDivThree">
         <TopNavbarSmallComponent title={shortUerName ? "Log Out" : "Hello, Sign In"} subtitle={"Account & Lists"} />
         <TopNavbarSmallComponent title={"Return"} subtitle={"& Orders"} />
-        <div>
-          <Link to="/Shop">
-            <i class="fas fa-shopping-cart fa-2x"></i>
-          </Link>
+        <div className="ShopDivComponent">
+          <i
+            class="fas fa-shopping-cart"
+            onClick={() => {
+              ShowWishList == false ? setShowWishList(true) : setShowWishList(false);
+            }}
+          ></i>
+          {selector ? selector.length : 0}
+          <WhisListHoveDivComponent data={selector} showDivData={ShowWishList} />
         </div>
       </div>
     </div>

@@ -8,9 +8,7 @@ import HomePage from "./Pages/HomePage/HomePage";
 import ProductsShow from "./Pages/ProductsShowPage/ProductsShow";
 import SignInSignOutComponent from "./Pages/SignInSingOutPage/SignInSignOutComponent/SignInSignOutComponent";
 
-import { firestore } from "./Components/Firebase/Firebase.utili";
-
-import { auth } from "./Components/Firebase/Firebase.utili";
+import { auth, createUserProfileDoc } from "./Components/Firebase/Firebase.utili";
 
 import "./App.css";
 
@@ -19,16 +17,30 @@ function App() {
     currentUser: null,
   });
 
+  const [FixNavbar, setFixNavbar] = useState(false);
+
   useEffect(() => {
     auth.onAuthStateChanged(async (userAuth) => {
+      createUserProfileDoc(userAuth);
       setUser({ currentUser: userAuth });
     });
   }, []);
 
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 100) {
+      setFixNavbar(true);
+    }
+    if (window.scrollY < 10) {
+      setFixNavbar(false);
+    }
+  });
+
   return (
     <div className="App">
-      <TopNavbarComponent userData={User.currentUser} />
-      <SecondNavbarComponent />
+      <div className={FixNavbar == true ? "TopNavbarDiv fixNavbarDiv" : "TopNavbarDiv"}>
+        <TopNavbarComponent userData={User.currentUser} />
+        <SecondNavbarComponent />
+      </div>
 
       <Switch>
         <Route exact path="/Category:Name" component={Category} />

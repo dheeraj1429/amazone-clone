@@ -1,4 +1,7 @@
 import { ACTION_TYPE } from "../ActionType/actionType";
+
+import { productGroup } from "../../Components/Products/ProductGroup.util";
+
 const initalState = {
   NavbarData: [
     { name: "All" },
@@ -49,12 +52,13 @@ const userReducer = (state = initalState, action) => {
     case ACTION_TYPE.SET_WISHLIST:
       return {
         ...state,
-        whisList: [
-          ...state.whisList,
-          {
-            ...action.payload,
-          },
-        ],
+        whisList: productGroup(state.whisList, action.payload),
+        // whisList: [
+        //   ...state.whisList,
+        //   {
+        //     ...action.payload,
+        //   },
+        // ],
       };
 
     case ACTION_TYPE.REMOVE_ITEM:

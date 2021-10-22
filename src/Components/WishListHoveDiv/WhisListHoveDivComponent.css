@@ -1,10 +1,10 @@
 .WishListCard {
-  width: 400px;
-  height: 500px;
+  width: 100px;
+  height: 100vh;
   background-color: #fff;
   position: absolute;
   top: 50px;
-  right: 0;
+  left: -12px;
   z-index: 999;
   border-radius: 10px;
   box-shadow: 5px 5px 5px 0px rgba(174, 174, 174, 0.46);
@@ -13,10 +13,61 @@
   padding: 1rem;
   overflow: scroll;
   overflow-x: hidden;
+  transition: all 0.3s ease;
+  opacity: 1;
 }
 
 .hideCard {
-  display: none;
+  opacity: 0;
+}
+
+.WishListContent {
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+
+.WishListContent h3 {
+  color: var(--darkColor);
+  font-size: 0.8rem;
+}
+
+.WishListContent p {
+  color: var(--footerColorFirst) !important;
+  margin: 0.3rem 0;
+}
+
+.ProductsImgDiv {
+  width: 80px;
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  margin: 0.6rem 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.ProductsImgDiv img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.quntityDiv {
+  width: 25px;
+  height: 25px;
+  background-color: var(--darkColor);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50%;
+}
+
+.quntityDiv p {
+  color: var(--mainColor) !important;
+  font-weight: 600;
 }
 
 .WishListCard::-webkit-scrollbar {
@@ -39,6 +90,16 @@
   background: #555;
 }
 
+.removeItemButton {
+  font-size: 0.6rem;
+  padding: 0.2rem 1rem;
+  background-color: var(--headerFontColor);
+  border: none;
+  color: var(---mainColor);
+  cursor: pointer;
+}
+
+/* 
 .wishListDivCardSm {
   width: 100%;
   height: auto;
@@ -48,12 +109,7 @@
   border: 1px solid rgb(129, 129, 129);
 }
 
-.ProductsImgDiv {
-  width: 50px;
-  height: 50px;
-  background-position: center;
-  background-size: cover;
-}
+
 
 .producstsContentDiv {
   margin-left: 1rem;
@@ -74,11 +130,4 @@
   color: rgb(53, 53, 53);
 }
 
-.removeItemButton {
-  font-size: 0.6rem;
-  padding: 0.5rem 1rem;
-  background-color: var(--headerFontColor);
-  border: none;
-  color: var(---mainColor);
-  cursor: pointer;
-}
+*/

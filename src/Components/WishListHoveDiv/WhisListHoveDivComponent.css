@@ -11,8 +11,8 @@
   -webkit-box-shadow: 5px 5px 5px 0px rgba(174, 174, 174, 0.46);
   -moz-box-shadow: 5px 5px 5px 0px rgba(174, 174, 174, 0.46);
   padding: 1rem;
-  overflow: scroll;
-  overflow-x: hidden;
+  /* overflow: scroll; */
+  /* overflow-x: hidden; */
   transition: all 0.3s ease;
   opacity: 1;
 }
@@ -37,6 +37,10 @@
   margin: 0.3rem 0;
 }
 
+.ProductCoverDiv {
+  position: relative;
+}
+
 .ProductsImgDiv {
   width: 80px;
   height: 100px;
@@ -47,6 +51,14 @@
   display: flex;
   justify-content: center;
   position: relative;
+}
+
+.ProductCoverDiv {
+  display: flex;
+}
+
+.Shop:hover {
+  text-decoration: underline;
 }
 
 .ProductsImgDiv img {

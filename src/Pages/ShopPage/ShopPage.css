@@ -1,0 +1,96 @@
+.ShopCard {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.Card {
+  width: 100%;
+  height: auto;
+  padding: 1.3rem;
+  background-color: var(---mainColor);
+  border-radius: 10px;
+}
+
+.Card h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.ShopContent {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid rgb(155, 153, 153);
+}
+
+.ShopContent .ShopImgDiv {
+  width: auto;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  object-fit: contain;
+}
+
+.ShopImgDiv img {
+  width: auto;
+  height: 100%;
+}
+
+.SHopContentDiv {
+  margin: 0 2rem;
+}
+
+.SHopContentDiv h1 {
+  font-size: 1.3rem;
+}
+
+.SHopContentDiv .inStock {
+  color: var(--loveRed);
+}
+
+.SHopContentDiv p {
+  margin: 0.4rem 0;
+  font-size: 0.8rem;
+}
+
+.QytDiv {
+  display: flex;
+  align-content: center;
+  margin: 0.5rem 0;
+}
+
+.QytDiv p {
+  margin-right: 1rem;
+  color: var(--linkColor);
+  cursor: pointer;
+}
+
+.QytDiv p:hover {
+  text-decoration: underline;
+}
+
+.SubTotalDiv {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  border-top: 1px solid var(--lightSmook);
+}
+
+.SubTotalDiv h2 {
+  float: right;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.SubTotalDiv button {
+  float: right;
+}

@@ -44,10 +44,12 @@ function ProductsComponent({ id, posterUrl, Discription, Deal_of_the_Day, shortT
                 setWishList({
                   posterUrl,
                   Deal_of_the_Day,
+                  Discription,
                   shortTitle,
                   offer,
                   ragulerPrice,
                   id,
+                  shortImages,
                 })
               )
             }

@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useDispatch } from "react-redux";
-
-import { removeItem } from "../../Redux/Action/action";
+import { Link } from "react-router-dom";
 
 import "./WhisListHoveDivComponent.css";
 
@@ -11,7 +10,7 @@ function WhisListHoveDivComponent(props) {
 
   let totalPrice;
   if (props.data.length > 0) {
-    totalPrice = props.data.map((el) => el.Deal_of_the_Day).reduce((acc, crv) => acc + crv);
+    totalPrice = props.data.map((el) => el.totalPrice).reduce((acc, crv) => acc + crv);
   }
 
   return (
@@ -20,18 +19,18 @@ function WhisListHoveDivComponent(props) {
         <div className="WishListContent">
           <h3>{props.data == 0 ? "Empty" : "Subtitle"}</h3>
           <p>{props.data.length > 0 ? `₹ ${totalPrice}` : ""}</p>
+          <Link to="/Shop">
+            <h3 className="Shop">Shop</h3>
+          </Link>
 
           {props.data.map((el) => (
-            <div>
+            <div className="ProductCoverDiv">
               <div className="ProductsImgDiv">
                 <div className="quntityDiv">
                   <p>{el.quntity}</p>
                 </div>
                 <img src={el.posterUrl} />
               </div>
-              {/* <button type="button" className="removeItemButton" onClick={() => dispatch(removeItem(el.id))}>
-                Remove Item
-              </button> */}
             </div>
           ))}
         </div>

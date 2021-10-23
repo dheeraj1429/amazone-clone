@@ -7,6 +7,7 @@ import Category from "./Pages/CategoryPage/Category";
 import HomePage from "./Pages/HomePage/HomePage";
 import ProductsShow from "./Pages/ProductsShowPage/ProductsShow";
 import SignInSignOutComponent from "./Pages/SignInSingOutPage/SignInSignOutComponent/SignInSignOutComponent";
+import ShopPage from "./Pages/ShopPage/ShopPage";
 
 import { auth, createUserProfileDoc } from "./Components/Firebase/Firebase.utili";
 
@@ -47,6 +48,7 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route exact path="/Products:Name" component={ProductsShow} />
         <Route exact path="/User:Name" component={SignInSignOutComponent} />
+        <Route exact path="/Shop" component={ShopPage} />
       </Switch>
     </div>
   );

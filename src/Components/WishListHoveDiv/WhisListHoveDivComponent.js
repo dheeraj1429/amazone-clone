@@ -6,14 +6,29 @@ import { Link } from "react-router-dom";
 import "./WhisListHoveDivComponent.css";
 
 function WhisListHoveDivComponent(props) {
+  const [FullSideBar, setFullSideBar] = useState(false);
   let totalPrice;
   if (props.data.length > 0) {
     totalPrice = props.data.map((el) => el.totalPrice).reduce((acc, crv) => acc + crv);
   }
 
+  window.addEventListener("scroll", function () {
+    if (this.scrollY > 50) {
+      setFullSideBar(true);
+    }
+    if (this.scrollY < 30) {
+      setFullSideBar(false);
+    }
+  });
+
   return (
     <div>
-      <div className={props.showDivData == true ? "WishListCard" : "WishListCard hideCard"}>
+      <div
+        className={props.showDivData == true ? "WishListCard" : "WishListCard hideCard"}
+        style={{
+          top: FullSideBar == true ? "0" : "50px",
+        }}
+      >
         <div className="WishListContent">
           <h3>{props.data == 0 ? "Empty" : "Subtitle"}</h3>
           <p>{props.data.length > 0 ? `₹ ${totalPrice}` : ""}</p>

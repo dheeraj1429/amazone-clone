@@ -38,7 +38,7 @@ function TopNavbarComponent(props) {
       </div>
       <div className="NavbarDivThree">
         <TopNavbarSmallComponent title={shortUerName ? "Log Out" : "Hello, Sign In"} subtitle={"Account & Lists"} />
-        <TopNavbarSmallComponent title={"Return"} subtitle={"& Orders"} />
+        <TopNavbarSmallComponent title={"Return"} subtitle={"Orders"} />
         <div className="ShopDivComponent">
           <i
             class="fas fa-shopping-cart"

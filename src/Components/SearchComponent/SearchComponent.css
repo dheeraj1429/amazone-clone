@@ -6,9 +6,40 @@
   width: auto;
 }
 
+.CardSearchDiv {
+  width: 1020px;
+  height: 300px;
+  position: absolute;
+  background-color: var(---mainColor);
+  z-index: 100;
+  left: 0;
+  top: 60px;
+  padding: 0.6rem 0.8rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: none;
+}
+
+.ShowDiv {
+  display: block;
+}
+
+.SearchCard {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.SearchContentDiv h1 {
+  color: var(--darkColor);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
 .NavbarDivSecond {
   border-radius: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .NavbarDivSecond .SearchDiv input {

@@ -236,4 +236,54 @@ export const AllProducts = [
     It has been ergonomically and aesthetically designed to meet the needs of every music lover by offering extraordinary style with sports centric, secure fit ear hooks
     With its Type-c interface, there's no hassle for up or down orientation as it works regardless of which way you plug in.`,
   },
+  {
+    id: 10,
+    posterUrl: "https://m.media-amazon.com/images/I/81pq95yizSL._UY741_.jpg",
+    Discription: "Polestar Flyer 55 Liters Polyester Red Rucksack For Hiking Trekking Travel Backpack With Rain Cover And Shoe Compartment",
+    shortTitle: "Polestar Flyer 55 Liters Polyester Red",
+    ragulerPrice: 2900,
+    Deal_of_the_Day: 1900,
+    rating: "1,234 ratings",
+    anwsered: "31 answered questions",
+
+    shortImages: [
+      { url: "https://m.media-amazon.com/images/I/81Z2Liv3LTL._UX679_.jpg" },
+      { url: "https://m.media-amazon.com/images/I/71w2RpSBCLL._UX679_.jpg" },
+      { url: "https://m.media-amazon.com/images/I/91Hqp55l0HL._UL1500_.jpg" },
+      { url: "https://m.media-amazon.com/images/I/715dKpJElSL._UX679_.jpg" },
+    ],
+
+    About: `
+    Fit Type: Regular
+    Material: Polyester
+    Color: Red; Capacity: 55 Liters
+    Dimensions: 68 X 32 X 24 Cm
+    Water-resistant; Rain Cover; Ergonomic Design; Yoga Mat Holder; Umbrella Pocket; Shoe Pocket
+    Warranty: 12 Months; Package Contents: Rucksack Travel Backpack With Rain Cover and Shoe Compartment
+    `,
+  },
+
+  {
+    id: 11,
+    posterUrl: "https://m.media-amazon.com/images/I/31r1Yw7Ku9S.jpg",
+    Discription: "Epaal® Plain Color Replacement Silicone Strap for Honor Band 6 & Huawei Band 6 (Dark Blue)",
+    shortTitle: "Epaal® Plain Color Replacement",
+    ragulerPrice: 599,
+    Deal_of_the_Day: 299,
+    rating: "38 ratings",
+    anwsered: "31 answered questions",
+
+    shortImages: [
+      { url: "https://m.media-amazon.com/images/I/31Eu+-l9LES.jpg" },
+      { url: "https://m.media-amazon.com/images/I/31ChO3KeIXS.jpg" },
+      { url: "https://m.media-amazon.com/images/I/41PLLZciqMS.jpg" },
+      { url: "https://m.media-amazon.com/images/I/31r1Yw7Ku9S.jpg" },
+    ],
+
+    About: `Soft Silicone Wristwatch Band Strap replacement for Honor Band 6 / HUAWEI Band 6 Smart watch. Includes the matching color additional plugs required for connecting the straps.
+    Ensure your watch in steady and secure, no problem for most sports.
+    The porous buckle is convenient for you to wear and adjust the sides, single handed operation.
+    Use these vivid belts to make you feel energetic and relax with different styles of dress. The product contains only the wristband, Honor Band 6 / HUAWEI Band 6 watch not included.
+    `,
+  },
 ];

@@ -33,7 +33,7 @@
 
 .ShopContent .ShopImgDiv {
   width: auto;
-  height: 200px;
+  height: 220px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -93,4 +93,39 @@
 
 .SubTotalDiv button {
   float: right;
+}
+
+.GiftLine span {
+  color: var(--linkColor);
+}
+
+.SHopContentDiv h5 > span {
+  font-weight: 400;
+}
+
+.payDiv {
+  margin-top: 1rem;
+}
+
+.ThankuDiv {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: var(---mainColor);
+  padding: 20px;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.ThankuDiv h1 {
+  margin: 1rem 0;
+}
+
+.ThankuDiv span {
+  color: var(--linkColor);
+  cursor: pointer;
+}
+
+.ThankuDiv span:hover {
+  text-decoration: underline;
 }

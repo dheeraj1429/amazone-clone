@@ -50,6 +50,7 @@ function ProductsComponent({ id, posterUrl, Discription, Deal_of_the_Day, shortT
                   ragulerPrice,
                   id,
                   shortImages,
+                  About,
                 })
               )
             }

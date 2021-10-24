@@ -1,0 +1,53 @@
+.youOrderDiv {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+}
+
+.yourOrderCard {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: var(---mainColor);
+  border-radius: 10px;
+}
+
+.yourOrderCard h1 {
+  margin-bottom: 1rem;
+}
+
+.InnrDivPro {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  border-top: 1px solid var(--smoothWhite);
+}
+
+.YourOrderInnerDiv {
+  display: flex;
+  margin-bottom: 1.4rem;
+}
+
+.YourOrderImgDiv {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+}
+
+.YourOrderImgDiv img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.YourOrderContentDiv h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  color: var(--linkColor);
+}
+
+.YourOrderContentDiv p {
+  font-size: 0.6rem;
+}

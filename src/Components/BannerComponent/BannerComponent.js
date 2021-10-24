@@ -8,28 +8,14 @@ import { AllProducts } from "../Products/Products.uitil";
 import "./BannerComponent.css";
 
 function BannerComponent() {
-  const [ProductsData, setProductsData] = useState({
-    productsCollection: AllProducts,
-  });
-
   const selector = useSelector((state) => state.user.listData.data);
-  const dispatch = useDispatch();
-
-  let filterData;
-  if (selector) {
-    filterData = selector.filter((el, idx) => idx < 9);
-  }
-
-  useEffect(() => {
-    dispatch(setData(ProductsData.productsCollection));
-  }, []);
 
   return (
     <div className="BannerSection">
       <div className="Container">
         <div className="BannerDiv"></div>
         <div className="Spacer"></div>
-        <div className="ProductsContainer">{selector ? filterData.map(({ ...otherProps }) => <ProductsComponent {...otherProps} />) : null}</div>
+        <div className="ProductsContainer">{selector ? selector.map(({ ...otherProps }) => <ProductsComponent {...otherProps} />) : null}</div>
       </div>
     </div>
   );

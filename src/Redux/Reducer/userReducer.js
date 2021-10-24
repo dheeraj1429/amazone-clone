@@ -24,6 +24,7 @@ const initalState = {
   searchData: "",
   listData: [],
   whisList: [],
+  listClone: [],
 };
 
 const userReducer = (state = initalState, action) => {
@@ -67,6 +68,18 @@ const userReducer = (state = initalState, action) => {
       return {
         ...state,
         whisList: NewItemsList,
+      };
+
+    case ACTION_TYPE.REMOVE_ALL_ITEM:
+      return {
+        ...state,
+        whisList: [],
+      };
+
+    case ACTION_TYPE.CLONE_ALL_ITEM:
+      return {
+        ...state,
+        listClone: [...state.listClone, ...state.whisList],
       };
 
     default:

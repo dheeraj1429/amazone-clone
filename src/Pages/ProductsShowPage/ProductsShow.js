@@ -6,6 +6,7 @@ import { setWishList } from "../../Redux/Action/action";
 import { CustomButtonComponent } from "../../Components/CustomButtonComponent/CustomButtonComponent";
 
 import "./ProductsShow.css";
+import { Link } from "react-router-dom";
 
 function ProductsShow(props) {
   const [ImgUrl, setImgUrl] = useState(false);
@@ -86,15 +87,20 @@ function ProductsShow(props) {
                   setWishList({
                     posterUrl,
                     Deal_of_the_Day,
+                    Discription,
                     shortTitle,
                     offer,
                     ragulerPrice,
                     id,
+                    shortImages,
+                    About,
                   })
                 )
               }
             />
-            <CustomButtonComponent data={"Buy Now"} extraClass={"AddToCard"} type={"button"} />
+            <Link to="/Shop">
+              <CustomButtonComponent data={"Buy Now"} extraClass={"AddToCard"} type={"button"} />
+            </Link>
           </div>
         </div>
       </div>

@@ -34,3 +34,23 @@ export const removeItem = (data) => {
     payload: data,
   };
 };
+
+export const removeAllItem = () => {
+  return {
+    type: ACTION_TYPE.REMOVE_ALL_ITEM,
+  };
+};
+
+export const cloneAllItem = (data) => {
+  return {
+    type: ACTION_TYPE.CLONE_ALL_ITEM,
+    payload: data,
+  };
+};
+
+export const searchData = (data) => {
+  return {
+    type: ACTION_TYPE.SEARCH_DATA,
+    payload: data,
+  };
+};
